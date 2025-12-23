@@ -10,9 +10,7 @@ import seaborn as sns
 
 def train_model():
     # Load dataset PREPROCESSED
-    df = pd.read_csv(
-        "C:/Users/Sutan Alghazali/SMSML_Sutan/Membangun_model/credit_card_fraud_preprocessed.csv"
-    )
+    df = pd.read_csv("../MLProject/credit_card_fraud_preprocessed.csv")
 
     # Split feature & target
     X = df.drop(columns=["IsFraud"])
@@ -61,3 +59,4 @@ def train_model():
 
 if __name__ == "__main__":
     train_model()
+
