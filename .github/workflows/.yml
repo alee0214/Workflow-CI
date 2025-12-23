@@ -2,7 +2,7 @@ name: MLflow Project CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
