@@ -30,6 +30,9 @@ jobs:
     - name: Run MLflow Project
       working-directory: MLProject
       run: |
+        unset MLFLOW_RUN_ID
+        unset MLFLOW_EXPERIMENT_ID
         mlflow run . \
-          --env-manager=local \
-          --experiment-name Credit Card Fraud Detection
+        --experiment-name "Credit Card Fraud Detection" \
+        --env-manager=local
+
